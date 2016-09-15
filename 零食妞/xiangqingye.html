@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="shortcut icon" href="logo.ico" />
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css" />
+
+		<!-- 新 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+
+		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+
+		<title>详情页</title>
+		<link rel="stylesheet" type="text/css" href="css/ue_grid.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/style2.css" />
+		<script src="js/jquery.min.js"></script>
+		<script language="javascript" src="js/jquery.easing.min.js"></script>
+		<script language="javascript" src="js/custom.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/hdw.css" />
+		<script src="js/hdw.js" type="text/javascript" charset="utf-8"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/css.css" />
+		<script src="js/js.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/xiangqing.css" />
+		<script src="js/xiangqing.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body style="background-color: #fff7e4;padding-top: 0;">
+
+		</script>
+		<div class="container" style="background-color: #FF981E; ">
+			<div class="head1">
+				<h1><a href="javascript:;"><img src="img/logo.png"/></a></h1>
+				<ul class="firstul">
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li>
+						<a href="jianguochaohuo.html">坚果炒货</a>
+					</li>
+					<li>
+						<a href="rouganroufu.html">肉干肉铺</a>
+					</li>
+					<li>
+						<a href="xiuxianxiaoshi.html">休闲小食</a>
+					</li>
+					<li>
+						<a href="xianglaluwei.html">香辣卤味</a>
+					</li>
+					<li>
+						<a href="mijianguofu.html">蜜饯果脯</a>
+					</li>
+					<li>
+						<a href="hongbeibinggan.html">烘焙饼干</a>
+					</li>
+				</ul>
+				<form action="javascript:;" method="post" class="form2" style="display: none;">
+					&nbsp;<i class="iconfont icon-signin"></i>
+					<ul>
+						<li class="reg">
+							<a href="##" style="float: right;width: 60px;height: 20px;margin-top: -18px;padding-left: -20px; color: white;">注册</a>
+						</li>
+						<li class="openlogin" style="float: right;width: 60px;height:20px;padding-left: 10px;margin-top: -18px;color: white;">
+							<a href="##">登录</a>
+						</li>
+					</ul>
+				</form>
+
+				<form action="javascript:;" method="post" class="form3">
+
+					<ul>
+						<li style="width: 70px;height: 20px;float: left;">
+							<i class="iconfont icon-wode" style="width: 30px;height: 20px;"></i>
+							<a href="index.html" style="float: right;width: 50px;height:20px;padding-left: 0px;color: white;line-height: 25px;">我的</a>
+						</li>
+
+						<li style="width: 70px;height: 20px;float: left;">
+							<i class="iconfont icon-gouwuche" style="width: 30px;height: 20px;"></i>
+							<a href="gouwuche.html" style="float: right;width: 50px;height:20px;padding-left: 0px;color: white;line-height: 25px;">购物车</a>
+						</li>
+
+						<li style="width: 60px;height: 20px;float: left;">
+							<i class="iconfont icon-signin" style="width: 30px;height: 20px;"></i>
+							<a href="index.html" style="float: right;width: 40px;height:20px;padding-left: 0px;color: white;line-height: 25px;">退出</a>
+						</li>
+					</ul>
+				</form>
+
+				<form action="javascript:;" method="post" class="form1">
+					<i id="btn1" class="iconfont icon-sousuo"></i>
+					<input id="txt1" type="text" placeholder="人生要勇于探索..." value="" />
+				</form>
+			</div>
+		</div>
+
+		<div class="clear">
+		</div>
+		<div class="loginmask">
+		</div>
+		<div id="loginalert" style="background: url(img/loading1.png);">
+			<div class="pd20 loginpd">
+				<h3><i class="closealert fr" ></i>
+    <div class="clear">
+    </div>
+    </h3>
+				<div class="loginwrap">
+					<div class="loginh">
+						<div class="fl">
+							会员登录
+						</div>
+						<div class="fr">
+							还没有账号
+							<a id="sigup_now" href="##" onclick="return false;">立即注册</a>
+						</div>
+						<div class="clear">
+						</div>
+					</div>
+					<h3><span>邮箱登录</span><span class="login_warning">用户名或密码错误</span>
+      <div class="clear">
+      </div>
+      </h3>
+					<div class="clear">
+					</div>
+					<form action="" method="post" id="login_form">
+						<div class="logininput">
+							<input type="text" name="username" class="loginusername" value="邮箱/用户名" />
+							<input type="text" class="loginuserpasswordt" value="密码" />
+							<input type="password" name="password" class="loginuserpasswordp" style="display:none" />
+						</div>
+						<div class="loginbtn">
+							<div class="loginsubmit fl">
+								<input id="loginbtn" type="button" value="登录" />
+								<div class="loginsubmiting">
+									<div class="loginsubmiting_inner">
+									</div>
+								</div>
+							</div>
+							<div class="logcheckbox fl">
+								<input id="bcdl" type="checkbox" checked="true" /> 保持登录
+							</div>
+							<div class="fr">
+								<a href="##">忘记密码?</a>
+							</div>
+							<div class="clear">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="thirdlogin">
+				<div class="pd50">
+					<h4>用第三方帐号直接登录</h4>
+					<ul>
+						<li id="sinal">
+							<a href="##">微博账号登录</a>
+						</li>
+						<li id="qql">
+							<a href="##">QQ账号登录</a>
+						</li>
+						<div class="clear">
+						</div>
+					</ul>
+					<div class="clear">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="reg_setp" style="background: url(img/loading1.png);">
+			<div class="back_setp">
+				返回
+			</div>
+			<div class="blogo" style="width: 650px; margin:100px auto 0;">
+				<form method="post" action="">
+					<div class="one">
+						<label for="username">用户名：</label>
+						<input type="text" id="username" class="a1" style="width: 300px;height: 40px;" />
+					</div>
+					<div class="one">
+						<label for="passwowd">密码：</label>
+						<input type="password" id="password" class="a1" style="width: 300px;height: 40px;" />
+					</div>
+					<div class="one">
+						<label for="passwords">确认密码：</label>
+						<input type="password" id="passwords" class="a1" style="width: 300px;height: 40px;" />
+					</div>
+					<div class="one">
+						<label for="email">邮件：</label>
+						<input type="text" id="email" class="a1" style="width: 300px;height: 40px;" />
+					</div>
+					<div class="one">
+						<label for="tel">手机：</label>
+						<input type="text" id="tel" class="a1" style="width: 300px;height: 40px;" />
+					</div>
+					<div class="two">
+						<input type="button" id="sendbtn" value="提交" style="width: 50px;height: 30px; border: none; background-color: deepskyblue;" />
+						<input type="reset" id="resbtn" value="重置" style="width: 50px;height: 30px; border: none; background-color: deepskyblue;" />
+
+					</div>
+				</form>
+			</div>
+			<div id="setp_quicklogin">
+				<h3></h3>
+				<h3></h3>
+				<ul class="quicklogin_socical">
+					<li class="quicklogin_socical_weibo">
+						<a href="##">微博帐号注册</a>
+					</li>
+					<li class="quicklogin_socical_qq">
+						<a href="##">QQ帐号注册</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			$("#sendbtn").click(function() {
+				var username = $("#username").val();
+				var passwords = $("#passwords").val();
+				//alert(username+passwords);
+				if(passwords != "") {
+					var js = document.createElement("script");
+					js.src = "http://localhost:8080/user/registerGet?name=" + username + "&password=" + passwords + "&callback=fn";
+					document.body.appendChild(js);
+					fn = function(result) {
+						if(result == 1) {
+							alert("注册成功");
+							window.location.href = "http://localhost:8080/httpview/零食妞/index.html";
+						} else {
+							alert("注册失败");
+						}
+					}
+					document.body.removeChild(js);
+				}
+			})
+			$("#loginbtn").click(function() {
+				var loginusername = $(".loginusername").val();
+				var loginpassword = $(".loginuserpasswordp").val();
+				//alert(loginusername+loginpassword);
+				if(loginpassword != "") {
+					var js = document.createElement("script");
+					js.src = "http://localhost:8080/user/loginget?name=" + loginusername + "&password=" + loginpassword + "&callback=fn";
+					document.body.appendChild(js);
+					fn = function(result) {
+						if(result == 1) {
+							alert("登录成功");
+							$(".form2").css({
+								"display": "none"
+							});
+							$(".form3").css({
+								"display": "block"
+							});
+							$(".closealert").click();
+							islogin = 1;
+							/*window.location.href = "http://localhost:8080/httpview/零食妞/index.html";*/
+						} else {
+							alert("密码错误");
+						}
+					}
+					document.body.removeChild(js);
+				}
+			})
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".area").hover(function() {
+					$(this).find(".qq").show(100);
+				}, function() {
+					$(this).find(".qq").hide(100);
+				});
+			});
+		</script>
+		<a href="#" style="font-size: 18px;line-height: 50px;">零食妞</a>
+		&nbsp;&nbsp;&gt;&nbsp;&nbsp;
+		<a href="#">坚果炒货</a>
+		&nbsp;&nbsp;&gt;&nbsp;&nbsp;
+		<a href="#">【七夕大促】零食妞新疆枣夹核桃500g 红枣核桃仁 枣想核你在一起（标准一斤装）</a>
+		<div class="zhongjianbufen" style="min-height: 400px;margin-top: 0;">
+
+			<div class="fangdajing">
+				<div class="wai">
+					<div class="one">
+						<img src="img/1.jpg" />
+						<span></span>
+					</div>
+					<div class="two">
+						<img class="active" src="img/11.jpg" />
+						<img src="img/22.jpg" />
+						<img src="img/33.jpg" />
+					</div>
+				</div>
+
+				<div class="the" style="z-index: 100;">
+					<img src="img/111.jpg" />
+				</div>
+			</div>
+
+			<div class="xiangqinglist">
+				<span style="font-weight: bold;font-size: 16px;line-height: 40px;">【七夕大促】零食妞新疆枣夹核桃500g 红枣核桃仁 枣想核你在一起（标准一斤装）</span>
+				<div class="jiage" style="width: 620px;height: 70px;background-color: rgb(247,247,247);">
+					<span style="display: block;line-height: 36px;color: #666666;">美 味 价： <i style="color: red;font-size: 16px;font-weight: bold;">￥40.00</i> <i style="text-decoration: line-through;">(原价：62.00)</i></span>
+					<span style=" display: block; width: 630px;line-height: 36px;color: #666666;">促销信息：<i style="font-size: 12px;color:red;font-weight: bold;"> 限时特惠 吃货福利 </i>
+</span>
+
+				</div>
+				<span style="display: block;line-height: 36px;color: #666666;">服　　务：由 <i style="color: red;">零食妞官方</i> 负责发货，并提供售后服务。</span>
+				<span style="border-bottom: 1px dashed #C0C0C0; display: block; width: 630px;line-height: 36px;color: #666666;">库　　存：<i style="font-size: 14px;font-weight: bold;"> 有 货 </i>全场满78元免运费，下单后立即发货！
+</span>
+				<span style="line-height: 50px;">选择规格：</span>
+				<div class="guige" style="width: 250px;height: 40px;border: 2px solid red;position: relative;margin-left: 60px;margin-top: -40px;">
+					<img style="width: 25px;height: 25px;margin: 5px 0 0 5px;" src="img/11.jpg" />
+					<i style="position: absolute; top: 10px;left: 40px;color: #666666;">【七夕大促】零食妞新疆枣夹核桃</i>
+				</div>
+
+				<input type="text" id="shumu" value="1" style="width: 35px; height: 35px;text-align: center; line-height: 34px;" />
+				<input type="button" id="jia" value="+" style="width: 20px;height: 20px;" />
+				<input type="button" id="jian" value="-" style="width: 20px;height: 20px;" />
+				<div class="addgouwuche" style="width: 100px;height: 30px;background-color: rgb(217,83,79);border-radius: 5px;margin-left: 100px;margin-top: -33px;color: white;line-height: 28px;">
+					&nbsp;<i class="iconfont icon-gouwuche"></i> &nbsp;加入购物车
+				</div>
+			</div>
+			<script type="text/javascript">
+				$("#jia").click(function() {
+					var shumu = parseInt($("#shumu").val());
+					shumu++;
+					$("#shumu").val(shumu);
+				});
+				$("#jian").click(function() {
+					var shumu = parseInt($("#shumu").val());
+					shumu--;
+					$("#shumu").val(shumu);
+				})
+				$(".addgouwuche").click(function() {
+					alert("加入成功进入购物车查看");
+				})
+			</script>
+
+			<div class="xiangguanbiaoqian">
+				<h4 style="color: rgb(255,152,30);font-size: 12px;">相关标签 ：</h4><br />
+				<div class="xgbiaoqian" style="height: 20px;border-radius: 5px; background-color:rgb(92,184,92);color: white;font-weight: bold;line-height: 20px;">
+					<i class="iconfont icon-biaoqian"></i> 美脑枣&nbsp;
+				</div>
+
+				<div class="xgbiaoqian" style="height: 20px;border-radius: 5px; background-color:rgb(91,192,222);color: white;font-weight: bold;line-height: 20px;">
+					<i class="iconfont icon-biaoqian"></i> 红枣核桃仁&nbsp;
+				</div>
+				<div class="xgbiaoqian" style="height: 20px;border-radius: 5px; background-color:rgb(217,83,79);color: white;font-weight: bold;line-height: 20px;">
+					<i class="iconfont icon-biaoqian"></i> 枣夹核桃&nbsp;
+				</div>
+				<div class="xgbiaoqian" style="height: 20px;border-radius: 5px; background-color:rgb(240,173,78);color: white;font-weight: bold;line-height: 20px;">
+					<i class="iconfont icon-biaoqian"></i> 新疆和田大枣&nbsp;
+				</div>
+				<div class="xgbiaoqian" style="height: 20px;border-radius: 5px; background-color:rgb(51,122,183);color: white;font-weight: bold;line-height: 20px;">
+					<i class="iconfont icon-biaoqian"></i> 新疆核桃&nbsp;
+				</div>
+
+			</div>
+
+		<div class="gouwuchetubiao" style="width: 60px;height: 60px;background-color: red; ">
+			<a href="gouwuche.html"><i class="iconfont icon-gouwuche" style="font-size: 60px;line-height: 60px;color: white;"></i>
+				<span id="jiesuan" style="display:none; position: absolute; top: 10px; left: -40px;background-color: black; color: white;">
+					去结算~
+				</span>
+			</a>
+		</div>
+		
+		<div class="tongleiremai">
+				<h3 style="font-size: 14px;border-left: 5px solid rgb(255,152,30);border-bottom: 1px solid #EEEEEE; width: 1200px;height: 36px;line-height: 36px;">&nbsp;同类热卖</h3>
+				<ul>
+					<li>
+						<img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160301/56d59eb16cb0b.jpg?imageMogr2/thumbnail/300x300!" style="width:150px ;height: 150px;margin-left: 10px;"/>
+					<a href="xiangqingye.html">	<span style="color: rgb(102,125,183);">百草味-东北松子200g零食坚果干果炒货 手剥开口原味</span><br /></a>
+						<span style="color: red;">￥26.00</span>
+					</li>
+					<li>
+						<img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160301/56d59cc8ce68d.jpg?imageMogr2/thumbnail/300x300!" style="width:150px ;height: 150px;"/>
+					<a href="xiangqingye.html">		<span style="color: rgb(102,125,183);">百草味 奶香巴旦木180g 坚果炒货特产干果</span><br /></a>
+						<span style="color: red;">￥17.25</span>
+					</li>
+					<li>
+						<img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160301/56d593d67b09e.jpg?imageMogr2/thumbnail/300x300!" style="width:150px ;height: 150px;"/>
+					<a href="xiangqingye.html">		<span style="color: rgb(102,125,183);">百草味坚果零食 炭烧腰果190g 坚果炒货 零食小吃</span><br /></a>
+						<span style="color: red;">￥19.25</span>
+					</li>
+					<li>
+						<img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160301/56d59245336da.jpg?imageMogr2/thumbnail/300x300!" style="width:150px ;height: 150px;"/>
+						<a href="xiangqingye.html">	<span style="color: rgb(102,125,183);">百草味-碧根果218g零食坚果特产干果炒货奶油味长寿果</span><br /></a>
+						<span style="color: red;">￥19.90</span>
+					</li>
+					<li>
+						<img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160301/56d4737260736.jpg?imageMogr2/thumbnail/300x300!" style="width:150px ;height: 150px;"/>
+						<a href="xiangqingye.html">	<span style="color: rgb(102,125,183);">百草味-夏威夷果200g坚果炒货零食干果奶油味 送开果器</span><br /></a>
+						<span style="color: red;">￥15.90</span>
+					</li>
+					<li>
+						<img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160229/56d45dc7a0ab4.jpg?imageMogr2/thumbnail/300x300!" style="width:150px ;height: 150px;"/>
+					<a href="xiangqingye.html">		<span style="color: rgb(102,125,183);">【清之坊-开心果198g】坚果炒货零食特产粒粒开口 饱满盐焗开心果</span><br /></a>
+						<span style="color: red;">￥25.30</span>
+					</li>
+				</ul>
+		</div>
+		
+		<div class="pinpaijingxuan">
+			<h3 style="font-size: 14px;border-left: 5px solid rgb(255,152,30);border-bottom: 1px solid #EEEEEE; width: 175px;height: 36px;line-height: 36px;text-align: center;">&nbsp;品牌精选</h3>
+			
+			<ul>
+					<li>
+						<img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160301/56d59eb16cb0b.jpg?imageMogr2/thumbnail/300x300!" style="width:150px ;height: 150px;margin-left: 10px;"/>
+					<a href="xiangqingye.html">	<span style="color: rgb(102,125,183);">百草味-东北松子200g零食坚果干果炒货 手剥开口原味</span><br /></a>
+						<span style="color: red;">￥26.00</span>
+					</li>
+					<li>
+						<img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160301/56d59cc8ce68d.jpg?imageMogr2/thumbnail/300x300!" style="width:150px ;height: 150px;"/>
+					<a href="xiangqingye.html">		<span style="color: rgb(102,125,183);">百草味 奶香巴旦木180g 坚果炒货特产干果</span><br /></a>
+						<span style="color: red;">￥17.25</span>
+					</li>
+					<li>
+						<img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160301/56d593d67b09e.jpg?imageMogr2/thumbnail/300x300!" style="width:150px ;height: 150px;"/>
+					<a href="xiangqingye.html">		<span style="color: rgb(102,125,183);">百草味坚果零食 炭烧腰果190g 坚果炒货 零食小吃</span><br /></a>
+						<span style="color: red;">￥19.25</span>
+					</li>
+					<li>
+						<img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160301/56d59245336da.jpg?imageMogr2/thumbnail/300x300!" style="width:150px ;height: 150px;"/>
+						<a href="xiangqingye.html">	<span style="color: rgb(102,125,183);">百草味-碧根果218g零食坚果特产干果炒货奶油味长寿果</span><br /></a>
+						<span style="color: red;">￥19.90</span>
+					</li>
+					<li>
+						<img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160301/56d4737260736.jpg?imageMogr2/thumbnail/300x300!" style="width:150px ;height: 150px;"/>
+						<a href="xiangqingye.html">	<span style="color: rgb(102,125,183);">百草味-夏威夷果200g坚果炒货零食干果奶油味 送开果器</span><br /></a>
+						<span style="color: red;">￥15.90</span>
+					</li>
+					<li>
+						<img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160229/56d45dc7a0ab4.jpg?imageMogr2/thumbnail/300x300!" style="width:150px ;height: 150px;"/>
+					<a href="xiangqingye.html">		<span style="color: rgb(102,125,183);">【清之坊-开心果198g】坚果炒货零食特产粒粒开口 饱满盐焗开心果</span><br /></a>
+						<span style="color: red;">￥25.30</span>
+					</li>
+					<li>
+						<img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160229/56d45dc7a0ab4.jpg?imageMogr2/thumbnail/300x300!" style="width:150px ;height: 150px;"/>
+					<a href="xiangqingye.html">		<span style="color: rgb(102,125,183);">【清之坊-开心果198g】坚果炒货零食特产粒粒开口 饱满盐焗开心果</span><br /></a>
+						<span style="color: red;">￥25.30</span>
+					</li>
+				</ul>
+		</div>
+		<div class="clecle" style="position: relative;height: 2400px;">
+			
+		</div>
+		<div class="shangpinjieshao">
+			<ul>
+				<li class="shangpinli"><a href="javscript:;">商品介绍</a></li>
+				<li class="shangpinli"><a href="javascript:;">商品评价</a></li>
+				<li class="gouwu" style="float: right;"><a href="javascript:;">
+					<i class="iconfont icon-gouwuche"></i>
+					加入购物车</a></li>
+			</ul>
+			<table border="1" cellspacing="" cellpadding="" class="tatata" style="margin: 20px auto;border-bottom: 1px dashed #EEEEEE;">
+				<tr>
+					<td>商品名称：【七夕大促】零食妞新</td>
+					<td>所属品牌：零食妞</td>
+					<td>商品毛重：500g</td>
+					<td>口味：原味</td>
+				</tr>
+				<tr>
+					<td>类别：红枣核桃</td>
+					<td>产地：中国</td>
+					<td>其他：</td>
+					<td>上架时间：2016-03-27</td>
+				</tr>
+			</table>
+		
+			<img src="https://lingshiniu.com/ueditor/php/upload/image/20160327/1459047684591429.png"/ style="margin: 0 auto;">
+			<img src="https://lingshiniu.com/ueditor/php/upload/image/20160327/1459047639667377.jpg" style="margin: 0 auto;"/>
+			<img src="https://lingshiniu.com/ueditor/php/upload/image/20160327/1459047642532135.jpg" style="margin: 0 auto;"/>
+			<img src="https://lingshiniu.com/ueditor/php/upload/image/20160327/1459047645377198.jpg" style="margin: 0 auto;"/>
+			<img src="https://lingshiniu.com/ueditor/php/upload/image/20160327/1459047648113302.jpg" style="margin: 0 auto;"/>
+			<img src="https://lingshiniu.com/ueditor/php/upload/image/20160327/1459047651497355.jpg" style="margin: 0 auto;"/>
+			<img src="https://lingshiniu.com/ueditor/php/upload/image/20160327/1459047655143240.jpg" style="margin: 0 auto;"/>
+			<img src="https://lingshiniu.com/ueditor/php/upload/image/20160327/1459047658182646.jpg" style="margin: 0 auto;"/>
+		</div>
+		<script type="text/javascript">
+			$(".shangpinli").click(function(){
+				$(this).css({"font-weight":"bold"});
+			})
+		</script>
+		</div> <!--中间部分对应的结尾div-->
+		<script type="text/javascript">
+			$(".gouwuchetubiao").mousemove(function() {
+				$("#jiesuan").css({
+					"display": "block"
+				})
+			}).mouseout(function() {
+				$("#jiesuan").css({
+					"display": "none"
+				})
+			})
+		</script>
+
+		<div class="footbox">
+			<div class="foot">
+				<p>皖ICP备14015385-2号&copy;2015-2016 零食妞</p>
+				<ul>
+					<li>
+						<a href="">关于零食妞</a>
+					</li>
+					<li>
+						<a href="">加入我们</a>
+					</li>
+					<li>
+						<a href="">联系我们</a>
+					</li>
+					<li>
+						<a href="">免责声明</a>
+					</li>
+					<li>
+						<a href="">建议反馈</a>
+					</li>
+					<li>
+						<a href="">活动专题</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function() {
+				$('li.pos').click(function() {
+					$(".nav-index-main-bar li").each(function() {
+						$(this).removeClass("active");
+					});
+					var is_load = $(this).attr('is-load');
+					if(is_load == 0) {
+						$(this).addClass("active");
+					}
+				})
+			});
+
+			$("#niu1").click(function() {
+
+				$(".main-good-box").css({
+					"display": "none"
+				});
+				$("#niu-tui-jian").css({
+					"display": "block"
+				});
+			});
+			$("#niu2").click(function() {
+
+				$(".main-good-box").css({
+					"display": "none"
+				});
+				$("#xiu-xian-ling-shi").css({
+					"display": "block"
+				});
+			});
+			$("#niu3").click(function() {
+
+				$(".main-good-box").css({
+					"display": "none"
+				});
+				$("#jian-guo-chao-shi").css({
+					"display": "block"
+				});
+			});
+			$("#niu4").click(function() {
+
+				$(".main-good-box").css({
+					"display": "none"
+				});
+				$("#rou-gan-rou-fu").css({
+					"display": "block"
+				});
+			});
+			$("#txt1").focus(function() {
+				$(this).animate({
+					width: 650
+				});
+				$(".firstul").css({
+					"display": "none"
+				});
+			}).blur(function() {
+				$(this).animate({
+					width: 180
+				});
+				$(".firstul").css({
+					"display": "block"
+				});
+			});
+			$("#btn1").click(function() {
+				alert("meixie");
+			});
+			$(".form2").mouseover(function() {
+				$(this).css({
+					"background": "red"
+				})
+			}).mouseout(function() {
+				$(this).css({
+					"background": "none"
+				})
+			});
+			$(".form2").mousemove(function() {
+				$(this).css({
+					"cursor": "pointer"
+				})
+			})
+		</script>
+		<script type='text/javascript'>
+			(function(m, ei, q, i, a, j, s) {
+				m[i] = m[i] || function() {
+					(m[i].a = m[i].a || []).push(arguments)
+				};
+				j = ei.createElement(q),
+					s = ei.getElementsByTagName(q)[0];
+				j.async = true;
+				j.charset = 'UTF-8';
+				j.src = '//static.meiqia.com/dist/meiqia.js';
+				s.parentNode.insertBefore(j, s);
+			})(window, document, 'script', '_MEIQIA');
+			_MEIQIA('entId', 30801);
+		</script>
+	</body>
+
+</html>
