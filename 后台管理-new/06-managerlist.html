@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后台管理列表</title>
+    <script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+    <style type="text/css">
+    	td{
+    		width: 200px;
+    		height: 50px;
+    		border: 1px solid #CCCCCC;
+    		white-space: nowrap;
+    		overflow: hidden;
+    		text-overflow: ellipsis;
+    	}
+    	img{
+    		width: 50px;
+    		height: 50px;
+    	}
+    </style>
+</head>
+<body style="background: paleturquoise;">
+<a href="07-managercreate.html">创建</a>
+<table id="tb1" style="border-collapse: collapse;">
+	<tr>
+		<th>
+			商品ID
+		</th>
+		<th>
+			商品名称
+		</th>
+		<th>
+			商品图片
+		</th>
+		<th>
+			商品价格
+		</th>
+	</tr>
+</table>
+<script>
+    var pageSizeV =10;
+    var pageIndexV=1;
+    //ajax 获取数据 load
+    $(function(){
+        $.ajax({
+            url:"../../product/GetProductsByPage_get",
+            data:{
+                "pagesize":pageSizeV,
+                "pageindex":pageIndexV
+            },
+            success:function(data){
+                //data  array
+                for(var i=0;i<data.length;i++){
+                    //把data 里面的string 主动转成对象；
+                    var dataObj=JSON.parse(data[i].Data);
+                    var trOb=$("<tr><td>"+dataObj.name+"</td><td>"+dataObj.price+"</td><td><img src=\""+dataObj.imgsrc+"\"/></td><td><a href='07-manageredit.html?id="+dataObj.id+"'>编辑</a></td><td><a href='08-deleteedit.html?id="+dataObj.id+"'>删除</a></td></tr>");
+                    $("#tb1").append(trOb);
+                }
+            },
+            dataType:"json"
+        });
+       
+    });
+</script>
+
+</body>
+</html>
