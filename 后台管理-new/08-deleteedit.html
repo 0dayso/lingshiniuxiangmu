@@ -31,7 +31,7 @@
         var request=new UrlSearch(); //实例化
         var pid=request.id;
         $.ajax({
-            url:"../../product/GetProductById_get?id="+pid,
+            url:"http://localhost:8080/product/GetProductById_get?id="+pid,
             success:function(data){ //data  { id:101,Data:"string json"}
                 var dataJsonOB=JSON.parse(data.Data);
                 $("#txtid").val(dataJsonOB.id);
@@ -45,12 +45,11 @@
             var pId=$("#txtid").val();
           
             var dataJsonOb={
-                "id":pId,
-               
+                "id":pId
             }
             var dataJsonStr=JSON.stringify(dataJsonOb);
             $.ajax({
-                url:"../product/DeleteProductById_post",
+                url:"http://localhost:8080/product/DeleteProductById_post",
                 data:{
                     "id":pId,
                     "datajson":dataJsonStr

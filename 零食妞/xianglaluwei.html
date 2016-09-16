@@ -27,6 +27,7 @@
 
 		<link rel="stylesheet" type="text/css" href="css/css.css" />
 		<script src="js/js.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/liebiaoye.css"/>
 	</head>
 
 	<body style="background-color: #fff7e4;padding-top: 0;">
@@ -276,29 +277,39 @@
 		</script>
 		
 		<div class="kongbai" style="min-height: 400px;">
-			
+			<a href="index.html" style="font-size: 18px;line-height: 50px;">零食妞</a>
+		&nbsp;&nbsp;&gt;&nbsp;&nbsp;
+		<a href="xianglaluwei.html">香辣卤味</a>
+			<div class="liebiao" style="width: 1150px;height: 970px; margin: 0 auto;margin-left: 20px; background-color: #FFFFFF;box-shadow: 2px 2px 2px rgba(0,0,0,0.1);position: relative;">
+			<ul id="liebiaoul">
+					
+				</ul>
+			</div>
 		</div>
-			
+		
 		<script>
     //ajax 获取数据 load
     $(function(){
         $.ajax({
             url:"./data/product.txt",
             data:{
-               
             },
             success:function(data){
-                //data  array
                 for(var i=0;i<data.length;i++){
                     //把data 里面的string 主动转成对象；
                     var dataObj=JSON.parse(data[i].Data);
-                    var trOb=$("<tr><td>"+dataObj.name+"</td><td>"+dataObj.price+"</td><td><img src=\""+dataObj.imgsrc+"\"/></td><td><a href='07-manageredit.html?id="+dataObj.id+"'>编辑</a></td><td><a href='08-deleteedit.html?id="+dataObj.id+"'>删除</a></td></tr>");
-                    $(".kongbai").append(trOb);
+                  var trOb=$("<li><img src=\""+dataObj.imgsrc+"\"/><span>￥ "+dataObj.price+"</span><i>"+dataObj.name+"</i><div class=\"guanzhu\"><i class=\"iconfont icon-ego-heart\"></i>&nbsp;&nbsp;关注</div><div class=\"jiarugouwuche\"><i class=\"iconfont icon-gouwuche\"></i>加入购物车</div></li>");
+                    $("#liebiaoul").append(trOb);
                 }
             },
             dataType:"json"
         });
-       
+        $("#liebiaoul").click(function(){
+        	window.open("xiangqingye.html");
+        }).mousemove(function(){
+        	$(this).css({"cursor":"pointer"})
+        })
+        
     });
 </script>
 		

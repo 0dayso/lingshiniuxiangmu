@@ -70,39 +70,34 @@
 					&nbsp;<i class="iconfont icon-signin"></i>
 					<ul>
 						<li class="reg">
-							<a href="##"  style="float: right;width: 60px;height: 20px;margin-top: -18px;padding-left: -20px; color: white;">注册</a>
+							<a href="##" style="float: right;width: 60px;height: 20px;margin-top: -18px;padding-left: -20px; color: white;">注册</a>
 						</li>
 						<li class="openlogin" style="float: right;width: 60px;height:20px;padding-left: 10px;margin-top: -18px;color: white;">
-							<a href="##" >登录</a>
+							<a href="##">登录</a>
 						</li>
 					</ul>
 				</form>
-				
-				
-				
+
 				<form action="javascript:;" method="post" class="form3" style="display: none;">
-					
+
 					<ul>
-						<li  style="width: 70px;height: 20px;float: left;">
+						<li style="width: 70px;height: 20px;float: left;">
 							<i class="iconfont icon-wode" style="width: 30px;height: 20px;"></i>
-					<a href="##" style="float: right;width: 50px;height:20px;padding-left: 0px;color: white;line-height: 25px;">我的</a>
+							<a href="##" style="float: right;width: 50px;height:20px;padding-left: 0px;color: white;line-height: 25px;">我的</a>
 						</li>
-						
-						<li  style="width: 70px;height: 20px;float: left;">
+
+						<li style="width: 70px;height: 20px;float: left;">
 							<i class="iconfont icon-gouwuche" style="width: 30px;height: 20px;"></i>
-					<a href="gouwuche.html" target="_blank" style="float: right;width: 50px;height:20px;padding-left: 0px;color: white;line-height: 25px;">购物车</a>
+							<a href="gouwuche.html" target="_blank" style="float: right;width: 50px;height:20px;padding-left: 0px;color: white;line-height: 25px;">购物车</a>
 						</li>
-						
+
 						<li style="width: 60px;height: 20px;float: left;">
 							<i class="iconfont icon-signin" style="width: 30px;height: 20px;"></i>
 							<a href="##" style="float: right;width: 40px;height:20px;padding-left: 0px;color: white;line-height: 25px;">退出</a>
 						</li>
 					</ul>
 				</form>
-				
-				
-				
-				
+
 				<form action="javascript:;" method="post" class="form1">
 					<i id="btn1" class="iconfont icon-sousuo"></i>
 					<input id="txt1" type="text" placeholder="人生要勇于探索..." value="" />
@@ -228,7 +223,7 @@
 				</ul>
 			</div>
 		</div>
-<script type="text/javascript">
+		<script type="text/javascript">
 			$("#sendbtn").click(function() {
 				var username = $("#username").val();
 				var passwords = $("#passwords").val();
@@ -259,10 +254,14 @@
 					fn = function(result) {
 						if(result == 1) {
 							alert("登录成功");
-							$(".form2").css({"display":"none"});
-							$(".form3").css({"display":"block"});
+							$(".form2").css({
+								"display": "none"
+							});
+							$(".form3").css({
+								"display": "block"
+							});
 							$(".closealert").click();
-							islogin=1;
+							islogin = 1;
 							/*window.location.href = "http://localhost:8080/httpview/零食妞/index.html";*/
 						} else {
 							alert("密码错误");
@@ -321,7 +320,6 @@
 		</ul>
 
 		<div class="main-good-box" id="niu-tui-jian" style="display: block; overflow: hidden;">
-
 			<div class="row item">
 				<div class="item-box  item-box-left ">
 					<div class="thumb">
@@ -335,11 +333,11 @@
 							<div class="price">￥40.00</div>
 						</a>
 						<div class="tags">
-							<a href="https://lingshiniu.com/search.html?keyword=美脑枣" target="_blank"><span class="label label-success"><i class="fa fa-tag"></i> 美脑枣</span></a>
-							<a href="https://lingshiniu.com/search.html?keyword=红枣核桃仁" target="_blank"><span class="label label-info"><i class="fa fa-tag"></i> 红枣核桃仁</span></a>
-							<a href="https://lingshiniu.com/search.html?keyword=枣夹核桃" target="_blank"><span class="label label-danger"><i class="fa fa-tag"></i> 枣夹核桃</span></a>
-							<a href="https://lingshiniu.com/search.html?keyword=新疆和田大枣" target="_blank"><span class="label label-warning"><i class="fa fa-tag"></i> 新疆和田大枣</span></a>
-							<a href="https://lingshiniu.com/search.html?keyword=新疆核桃" target="_blank"><span class="label label-primary"><i class="fa fa-tag"></i> 新疆核桃</span></a>
+							<a href="xiangqingye.html" target="_blank"><span class="label label-success"><i class="fa fa-tag"></i> 美脑枣</span></a>
+							<a href="xiangqingye.html" target="_blank"><span class="label label-info"><i class="fa fa-tag"></i> 红枣核桃仁</span></a>
+							<a href="xiangqingye.html" target="_blank"><span class="label label-danger"><i class="fa fa-tag"></i> 枣夹核桃</span></a>
+							<a href="xiangqingye.html" target="_blank"><span class="label label-warning"><i class="fa fa-tag"></i> 新疆和田大枣</span></a>
+							<a href="xiangqingye.html" target="_blank"><span class="label label-primary"><i class="fa fa-tag"></i> 新疆核桃</span></a>
 							<div class="clearfix"></div>
 						</div>
 						<a href="xiangqingye.html" target="_blank">
@@ -350,18 +348,17 @@
 				<div class="item-box  item-box-right ">
 					<div class="thumb">
 						<a href="#"><img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160301/56d46b0323d00.jpg?imageMogr2/thumbnail/300x300!" /></a>
-
 					</div>
 					<div class="info">
 						<a href="xiangqingye.html" target="_blank">
 							<div class="title">清之坊炭烧腰果188g坚果炒货零食休闲坚果酥脆可口腰果</div>
 						</a>
-						<a href="https://lingshiniu.com/item/14.html" target="_blank">
+						<a href="xiangqingye.html" target="_blank">
 							<div class="price">￥16.80</div>
 						</a>
 						<div class="tags">
-							<a href="https://lingshiniu.com/search.html?keyword=腰果" target="_blank"><span class="label label-success"><i class="fa fa-tag"></i> 腰果</span></a>
-							<a href="https://lingshiniu.com/search.html?keyword=休闲坚果" target="_blank"><span class="label label-info"><i class="fa fa-tag"></i> 休闲坚果</span></a>
+							<a href="xiangqingye.html" target="_blank"><span class="label label-success"><i class="fa fa-tag"></i> 腰果</span></a>
+							<a href="xiangqingye.html" target="_blank"><span class="label label-info"><i class="fa fa-tag"></i> 休闲坚果</span></a>
 							<div class="clearfix"></div>
 						</div>
 						<a href="xiangqingye.html" target="_blank">
@@ -369,265 +366,489 @@
 						</a>
 					</div>
 				</div>
-			</div>
-		</div>
-		<div class="main-good-box" id="xiu-xian-ling-shi" style="display: none;">
-
-			<div class="row item">
 				<div class="item-box  item-box-left ">
-					<div class="thumb">
-						<a href="#"><img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160327/56f74d0e0f07f.jpg?imageMogr2/thumbnail/300x300!" /></a>
+			<div class="thumb">
+				<a href="xiangqingye.html" target="_blank"><img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160229/56d46369b65c5.jpg?imageMogr2/thumbnail/300x300!" class="scrollLoading" /></a>
+			</div>
+			<div class="info">
+				<a href="xiangqingye.html" target="_blank">
+					<div class="title">清之坊-薄皮核桃250g零食坚果炒货薄皮核桃 薄壳手剥大核桃</div>
+				</a>
+				<a href="xiangqingye.html" target="_blank">
+					<div class="price">￥26.90</div>
+				</a>
+				<div class="tags">
+					<a href="xiangqingye.html" target="_blank"><span class="label label-success"><i class="fa fa-tag"></i> 纸皮核桃</span></a>
+					<a href="xiangqingye.html" target="_blank"><span class="label label-info"><i class="fa fa-tag"></i> 健脑</span></a>
+					<div class="clearfix"></div>
+				</div>
+				<a href="xiangqingye.html" target="_blank">
+					<div class="buy">查看更多</div>
+				</a>
+			</div>
+		</div>
+		<div class="item-box  item-box-right ">
+			<div class="thumb">
+				<a href="xiangqingye.html" target="_blank"><img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160229/56d45ac613212.jpg?imageMogr2/thumbnail/300x300!" class="scrollLoading" /></a>
+			</div>
+			<div class="info">
+				<a href="xiangqingye.html" target="_blank">
+					<div class="title">清之坊坚果 东北特大 红松子 开口松子198g（6小包）</div>
+				</a>
+				<a href="xiangqingye.html" target="_blank">
+					<div class="price">￥23.50</div>
+				</a>
+				<div class="tags">
+					<a href="xiangqingye.html" target="_blank"><span class="label label-success"><i class="fa fa-tag"></i> 东北松子</span></a>
+					<a href="xiangqingye.html" target="_blank"><span class="label label-info"><i class="fa fa-tag"></i> 开口松子</span></a>
+					<a href="xiangqingye.html" target="_blank "><span class="label label-danger "><i class="fa fa-tag "></i> 休闲必备</span></a>
+					<div class="clearfix"></div>
+				</div>
+				<a href="xiangqingye.html" target="_blank ">
+					<div class="buy ">查看更多</div>
+				</a>
+			</div>
+		</div>
+		<div class="item-box item-box-left ">
+			<div class="thumb ">
+				<a href="xiangqingye.html" target="_blank "><img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160229/56d452d17c046.jpg?imageMogr2/thumbnail/300x300! " class="scrollLoading " /></a>
+			</div>
+			<div class="info ">
+				<a href="xiangqingye.html" target="_blank ">
+					<div class="title ">清之坊 特级大圆奶香碧根果 长寿果 188g</div>
+				</a>
+				<a href="xiangqingye.html" target="_blank ">
+					<div class="price ">￥18.80</div>
+				</a>
+				<div class="tags ">
+					<a href="xiangqingye.html" target="_blank "><span class="label label-success "><i class="fa fa-tag "></i> 碧根果</span></a>
+					<a href="xiangqingye.html" target="_blank "><span class="label label-info "><i class="fa fa-tag "></i> 坚果</span></a>
+					<a href="xiangqingye.html" target="_blank "><span class="label label-danger "><i class="fa fa-tag "></i> 长寿果</span></a>
+					<a href="xiangqingye.html" target="_blank "><span class="label label-warning "><i class="fa fa-tag "></i> 美国山核桃</span></a>
+					<div class="clearfix "></div>
+				</div>
+				<a href="xiangqingye.html" target="_blank ">
+					<div class="buy ">查看更多</div>
+				</a>
+			</div>
+		</div>
+		<div class="item-box item-box-right ">
+			<div class="thumb ">
+				<a href="xiangqingye.html" target="_blank "><img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160229/56d44cb3cd671.jpg?imageMogr2/thumbnail/300x300! " class="scrollLoading " /></a>
+			</div>
+			<div class="info ">
+				<a href="xiangqingye.html" target="_blank ">
+					<div class="title ">清之坊零食 手剥NP超薄壳杏仁特级奶油巴旦木坚果188g</div>
+				</a>
+				<a href="xiangqingye.html" target="_blank ">
+					<div class="price ">￥17.50</div>
+				</a>
+				<div class="tags ">
+					<a href="xiangqingye.html" target="_blank "><span class="label label-success "><i class="fa fa-tag "></i> 巴旦木</span></a>
+					<a href="xiangqingye.html " target="_blank "><span class="label label-info "><i class="fa fa-tag "></i> 超薄壳杏仁</span></a>
+					<div class="clearfix "></div>
+				</div>
+				<a href="xiangqingye.html" target="_blank ">
+					<div class="buy ">查看更多</div>
+				</a>
+			</div>
+		</div>
+		<div class="item-box item-box-left ">
+			<div class="thumb ">
+				<a href="xiangqingye.html" target="_blank "><img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160424/571ce7256c9a9.jpg?imageMogr2/thumbnail/300x300! " class="scrollLoading " /></a>
+			</div>
+			<div class="info ">
+				<a href="xiangqingye.html" target="_blank ">
+					<div class="title ">散货蓝莓干200g 果脯 休闲零食 低糖酸梅子类制品 独立小包装新疆特产</div>
+				</a>
+				<a href="xiangqingye.html" target="_blank ">
+					<div class="price ">￥13.00</div>
+				</a>
+				<div class="tags ">
+					<a href="xiangqingye.html" target="_blank "><span class="label label-success "><i class="fa fa-tag "></i> 蓝莓</span></a>
+					<a href="xiangqingye.html " target="_blank "><span class="label label-info "><i class="fa fa-tag "></i> 夏日必备</span></a>
+					<div class="clearfix "></div>
+				</div>
+				<a href="xiangqingye.html" target="_blank ">
+					<div class="buy ">查看更多</div>
+				</a>
+			</div>
+		</div>
+		<div class="item-box item-box-right ">
+			<div class="thumb ">
+				<a href="xiangqingye.html" target="_blank "><img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160424/571ce5524180f.jpg?imageMogr2/thumbnail/300x300! " class="scrollLoading " /></a>
+			</div>
+			<div class="info ">
+				<a href="xiangqingye.html" target="_blank ">
+					<div class="title ">新疆葡萄干200g 多款组合绿无核白 黑加仑 红香妃混装易拉罐</div>
+				</a>
+				<a href="xiangqingye.html" target="_blank ">
+					<div class="price ">￥12.50</div>
+				</a>
+				<div class="tags ">
+					<a href="xiangqingye.html" target="_blank "><span class="label label-success "><i class="fa fa-tag "></i> 罐装葡萄干</span></a>
+					<a href="xiangqingye.html" target="_blank "><span class="label label-info "><i class="fa fa-tag "></i> 葡萄干组合</span></a>
+					<a href="xiangqingye.html" target="_blank "><span class="label label-danger "><i class="fa fa-tag "></i> 混合葡萄干</span></a>
+					<div class="clearfix "></div>
+				</div>
+				<a href="xiangqingye.html" target="_blank ">
+					<div class="buy ">查看更多</div>
+				</a>
+			</div>
+		</div>
+		<div class="item-box item-box-left ">
+			<div class="thumb ">
+				<a href="xiangqingye.html" target="_blank "><img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160424/571ce375cacc5.jpg?imageMogr2/thumbnail/300x300! " class="scrollLoading " /></a>
+			</div>
+			<div class="info ">
+				<a href="xiangqingye.html" target="_blank ">
+					<div class="title ">零食妞 特大无花果干 新疆干果 500g特级无花果休闲零食糖包子</div>
+				</a>
+				<a href="xiangqingye.html" target="_blank ">
+					<div class="price ">￥49.00</div>
+				</a>
+				<div class="tags ">
+					<a href="xiangqingye.html" target="_blank "><span class="label label-success "><i class="fa fa-tag "></i> 无花果干</span></a>
+					<a href="xiangqingye.html" target="_blank "><span class="label label-info "><i class="fa fa-tag "></i> 特大无花果</span></a>
+					<div class="clearfix "></div>
+				</div>
+				<a href="xiangqingye.html" target="_blank ">
+					<div class="buy ">查看更多</div>
+				</a>
+			</div>
+		</div>
+		<div class="item-box item-box-right ">
+			<div class="thumb ">
+				<a href="xiangqingye.html" target="_blank "><img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160424/571cdff177070.jpg?imageMogr2/thumbnail/300x300! " class="scrollLoading " /></a>
+			</div>
+			<div class="info ">
+				<a href="xiangqingye.html" target="_blank ">
+					<div class="title ">百草味-蔓越莓曲奇100g 休闲零食品 黄油饼干 糕点点心特产</div>
+				</a>
+				<a href="xiangqingye.html " target="_blank ">
+					<div class="price ">￥9.80</div>
+				</a>
+				<div class="tags ">
+					<a href="xiangqingye.html " target="_blank "><span class="label label-success "><i class="fa fa-tag "></i> 曲奇饼干</span></a>
+					<a href="xiangqingye.html" target="_blank "><span class="label label-info "><i class="fa fa-tag "></i> 黄油饼干</span></a>
+					<a href="xiangqingye.html" target="_blank "><span class="label label-danger "><i class="fa fa-tag "></i> 烘培食品</span></a>
+					<div class="clearfix "></div>
+				</div>
+				<a href="xiangqingye.html" target="_blank ">
+					<div class="buy ">查看更多</div>
+				</a>
+			</div>
+		</div>
+		<div class="item-box item-box-left ">
+			<div class="thumb ">
+				<a href="xiangqingye.html" target="_blank "><img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160424/571cd39cac870.jpg?imageMogr2/thumbnail/300x300! " class="scrollLoading " /></a>
+			</div>
+			<div class="info ">
+				<a href="xiangqingye.html" target="_blank ">
+					<div class="title ">俏嘴巴燕麦酥麦片巧克力500g代可可脂燕麦巧克力休闲零食食品喜糖果</div>
+				</a>
+				<a href="xiangqingye.html" target="_blank ">
+					<div class="price ">￥16.00</div>
+				</a>
+				<div class="tags ">
+					<a href="xiangqingye.html" target="_blank "><span class="label label-success "><i class="fa fa-tag "></i> 燕麦巧克力</span></a>
+					<a href="xiangqingye.html " target="_blank "><span class="label label-info "><i class="fa fa-tag "></i> 喜糖零食</span></a>
+					<div class="clearfix "></div>
+				</div>
+				<a href="xiangqingye.html" target="_blank ">
+					<div class="buy ">查看更多</div>
+				</a>
+			</div>
+		</div>
+		<div class="item-box item-box-right ">
+			<div class="thumb ">
+				<a href="xiangqingye.html" target="_blank "><img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160416/5711ade9e1d49.jpg?imageMogr2/thumbnail/300x300! " class="scrollLoading " /></a>
+			</div>
+			<div class="info ">
+				<a href="xiangqingye.html" target="_blank ">
+					<div class="title ">新疆特产干果 女人香葡萄干 红玫瑰香提子干 小红香妃260g</div>
+				</a>
+				<a href="xiangqingye.html" target="_blank ">
+					<div class="price ">￥11.90</div>
+				</a>
+				<div class="tags ">
+					<a href="xiangqingye.html" target="_blank "><span class="label label-success "><i class="fa fa-tag "></i> 葡萄干</span></a>
+					<a href="xiangqingye.html" target="_blank "><span class="label label-info "><i class="fa fa-tag "></i> 女人香</span></a>
+					<a href="xiangqingye.html" target="_blank "><span class="label label-danger "><i class="fa fa-tag "></i> 红玫瑰</span></a>
+					<a href="xiangqingye.html" target="_blank "><span class="label label-warning "><i class="fa fa-tag "></i> 香提子</span></a>
+					<a href="xiangqingye.html" target="_blank "><span class="label label-primary "><i class="fa fa-tag "></i> 红香妃</span></a>
+					<div class="clearfix "></div>
+				</div>
+				<a href="xiangqingye.html" target="_blank ">
+					<div class="buy ">查看更多</div>
+				</a>
+			</div>
+		</div>
+	
+				
+				
+				
+				
+			</div>
+		</div>
+			
+		<div class="main-good-box " id="xiu-xian-ling-shi " style="display: none; ">
+
+			<div class="row item ">
+				<div class="item-box item-box-left ">
+					<div class="thumb ">
+						<a href="# "><img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160327/56f74d0e0f07f.jpg?imageMogr2/thumbnail/300x300! " /></a>
 					</div>
-					<div class="info">
-						<a href="xiangqingye.html" target="_blank">
-							<div class="title">【七夕大促】零食妞新疆枣夹核桃500g 红枣核桃仁 枣想核你在一起（标准一斤装）</div>
+					<div class="info ">
+						<a href="xiangqingye.html" target="_blank ">
+							<div class="title ">【七夕大促】零食妞新疆枣夹核桃500g 红枣核桃仁 枣想核你在一起（标准一斤装）</div>
 						</a>
-						<a href="xiangqingye.html" target="_blank">
-							<div class="price">￥40.00</div>
+						<a href="xiangqingye.html" target="_blank ">
+							<div class="price ">￥40.00</div>
 						</a>
-						<div class="tags">
-							<a href="https://lingshiniu.com/search.html?keyword=美脑枣" target="_blank"><span class="label label-success"><i class="fa fa-tag"></i> 美脑枣</span></a>
-							<a href="https://lingshiniu.com/search.html?keyword=红枣核桃仁" target="_blank"><span class="label label-info"><i class="fa fa-tag"></i> 红枣核桃仁</span></a>
-							<a href="https://lingshiniu.com/search.html?keyword=枣夹核桃" target="_blank"><span class="label label-danger"><i class="fa fa-tag"></i> 枣夹核桃</span></a>
-							<a href="https://lingshiniu.com/search.html?keyword=新疆和田大枣" target="_blank"><span class="label label-warning"><i class="fa fa-tag"></i> 新疆和田大枣</span></a>
-							<a href="https://lingshiniu.com/search.html?keyword=新疆核桃" target="_blank"><span class="label label-primary"><i class="fa fa-tag"></i> 新疆核桃</span></a>
-							<div class="clearfix"></div>
+						<div class="tags ">
+							<a href="https://lingshiniu.com/search.html?keyword=美脑枣 " target="_blank "><span class="label label-success "><i class="fa fa-tag "></i> 美脑枣</span></a>
+							<a href="https://lingshiniu.com/search.html?keyword=红枣核桃仁 " target="_blank "><span class="label label-info "><i class="fa fa-tag "></i> 红枣核桃仁</span></a>
+							<a href="https://lingshiniu.com/search.html?keyword=枣夹核桃 " target="_blank "><span class="label label-danger "><i class="fa fa-tag "></i> 枣夹核桃</span></a>
+							<a href="https://lingshiniu.com/search.html?keyword=新疆和田大枣 " target="_blank "><span class="label label-warning "><i class="fa fa-tag "></i> 新疆和田大枣</span></a>
+							<a href="https://lingshiniu.com/search.html?keyword=新疆核桃 " target="_blank "><span class="label label-primary "><i class="fa fa-tag "></i> 新疆核桃</span></a>
+							<div class="clearfix "></div>
 						</div>
-						<a href="xiangqingye.html" target="_blank">
-							<div class="buy">查看更多</div>
+						<a href="xiangqingye.html" target="_blank ">
+							<div class="buy ">查看更多</div>
 						</a>
 					</div>
 				</div>
-				<div class="item-box  item-box-right ">
-					<div class="thumb">
-						<a href="#"><img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160301/56d46b0323d00.jpg?imageMogr2/thumbnail/300x300!" /></a>
+				<div class="item-box item-box-right ">
+					<div class="thumb ">
+						<a href="# "><img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160301/56d46b0323d00.jpg?imageMogr2/thumbnail/300x300! " /></a>
 
 					</div>
-					<div class="info">
-						<a href="https://lingshiniu.com/item/14.html" target="_blank">
-							<div class="title">清之坊炭烧腰果188g坚果炒货零食休闲坚果酥脆可口腰果</div>
+					<div class="info ">
+						<a href="https://lingshiniu.com/item/14.html " target="_blank ">
+							<div class="title ">清之坊炭烧腰果188g坚果炒货零食休闲坚果酥脆可口腰果</div>
 						</a>
-						<a href="https://lingshiniu.com/item/14.html" target="_blank">
-							<div class="price">￥16.80</div>
+						<a href="https://lingshiniu.com/item/14.html " target="_blank ">
+							<div class="price ">￥16.80</div>
 						</a>
-						<div class="tags">
-							<a href="https://lingshiniu.com/search.html?keyword=腰果" target="_blank"><span class="label label-success"><i class="fa fa-tag"></i> 腰果</span></a>
-							<a href="https://lingshiniu.com/search.html?keyword=休闲坚果" target="_blank"><span class="label label-info"><i class="fa fa-tag"></i> 休闲坚果</span></a>
-							<div class="clearfix"></div>
+						<div class="tags ">
+							<a href="https://lingshiniu.com/search.html?keyword=腰果 " target="_blank "><span class="label label-success "><i class="fa fa-tag "></i> 腰果</span></a>
+							<a href="https://lingshiniu.com/search.html?keyword=休闲坚果 " target="_blank "><span class="label label-info "><i class="fa fa-tag "></i> 休闲坚果</span></a>
+							<div class="clearfix "></div>
 						</div>
-						<a href="https://lingshiniu.com/item/14.html" target="_blank">
-							<div class="buy">查看更多</div>
+						<a href="https://lingshiniu.com/item/14.html " target="_blank ">
+							<div class="buy ">查看更多</div>
 						</a>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="main-good-box" id="jian-guo-chao-shi" style="display: none;">
+		<div class="main-good-box " id="jian-guo-chao-shi " style="display: none; ">
 
-			<div class="row item">
-				<div class="item-box  item-box-left ">
-					<div class="thumb">
-						<a href="#"><img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160327/56f74d0e0f07f.jpg?imageMogr2/thumbnail/300x300!" /></a>
+			<div class="row item ">
+				<div class="item-box item-box-left ">
+					<div class="thumb ">
+						<a href="# "><img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160327/56f74d0e0f07f.jpg?imageMogr2/thumbnail/300x300! " /></a>
 					</div>
-					<div class="info">
-						<a href="xiangqingye.html" target="_blank">
-							<div class="title">【七夕大促】零食妞新疆枣夹核桃500g 红枣核桃仁 枣想核你在一起（标准一斤装）</div>
+					<div class="info ">
+						<a href="xiangqingye.html " target="_blank ">
+							<div class="title ">【七夕大促】零食妞新疆枣夹核桃500g 红枣核桃仁 枣想核你在一起（标准一斤装）</div>
 						</a>
-						<a href="xiangqingye.html" target="_blank">
-							<div class="price">￥40.00</div>
+						<a href="xiangqingye.html " target="_blank ">
+							<div class="price ">￥40.00</div>
 						</a>
-						<div class="tags">
-							<a href="https://lingshiniu.com/search.html?keyword=美脑枣" target="_blank"><span class="label label-success"><i class="fa fa-tag"></i> 美脑枣</span></a>
-							<a href="https://lingshiniu.com/search.html?keyword=红枣核桃仁" target="_blank"><span class="label label-info"><i class="fa fa-tag"></i> 红枣核桃仁</span></a>
-							<a href="https://lingshiniu.com/search.html?keyword=枣夹核桃" target="_blank"><span class="label label-danger"><i class="fa fa-tag"></i> 枣夹核桃</span></a>
-							<a href="https://lingshiniu.com/search.html?keyword=新疆和田大枣" target="_blank"><span class="label label-warning"><i class="fa fa-tag"></i> 新疆和田大枣</span></a>
-							<a href="https://lingshiniu.com/search.html?keyword=新疆核桃" target="_blank"><span class="label label-primary"><i class="fa fa-tag"></i> 新疆核桃</span></a>
-							<div class="clearfix"></div>
+						<div class="tags ">
+							<a href="https://lingshiniu.com/search.html?keyword=美脑枣 " target="_blank "><span class="label label-success "><i class="fa fa-tag "></i> 美脑枣</span></a>
+							<a href="https://lingshiniu.com/search.html?keyword=红枣核桃仁 " target="_blank "><span class="label label-info "><i class="fa fa-tag "></i> 红枣核桃仁</span></a>
+							<a href="https://lingshiniu.com/search.html?keyword=枣夹核桃 " target="_blank "><span class="label label-danger "><i class="fa fa-tag "></i> 枣夹核桃</span></a>
+							<a href="https://lingshiniu.com/search.html?keyword=新疆和田大枣 " target="_blank "><span class="label label-warning "><i class="fa fa-tag "></i> 新疆和田大枣</span></a>
+							<a href="https://lingshiniu.com/search.html?keyword=新疆核桃 " target="_blank "><span class="label label-primary "><i class="fa fa-tag "></i> 新疆核桃</span></a>
+							<div class="clearfix "></div>
 						</div>
-						<a href="xiangqingye.html" target="_blank">
-							<div class="buy">查看更多</div>
+						<a href="xiangqingye.html " target="_blank ">
+							<div class="buy ">查看更多</div>
 						</a>
 					</div>
 				</div>
-				<div class="item-box  item-box-right ">
-					<div class="thumb">
-						<a href="#"><img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160301/56d46b0323d00.jpg?imageMogr2/thumbnail/300x300!" /></a>
+				<div class="item-box item-box-right ">
+					<div class="thumb ">
+						<a href="# "><img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160301/56d46b0323d00.jpg?imageMogr2/thumbnail/300x300! " /></a>
 
 					</div>
-					<div class="info">
-						<a href="https://lingshiniu.com/item/14.html" target="_blank">
-							<div class="title">清之坊炭烧腰果188g坚果炒货零食休闲坚果酥脆可口腰果</div>
+					<div class="info ">
+						<a href="https://lingshiniu.com/item/14.html " target="_blank ">
+							<div class="title ">清之坊炭烧腰果188g坚果炒货零食休闲坚果酥脆可口腰果</div>
 						</a>
-						<a href="https://lingshiniu.com/item/14.html" target="_blank">
-							<div class="price">￥16.80</div>
+						<a href="https://lingshiniu.com/item/14.html " target="_blank ">
+							<div class="price ">￥16.80</div>
 						</a>
-						<div class="tags">
-							<a href="https://lingshiniu.com/search.html?keyword=腰果" target="_blank"><span class="label label-success"><i class="fa fa-tag"></i> 腰果</span></a>
-							<a href="https://lingshiniu.com/search.html?keyword=休闲坚果" target="_blank"><span class="label label-info"><i class="fa fa-tag"></i> 休闲坚果</span></a>
-							<div class="clearfix"></div>
+						<div class="tags ">
+							<a href="https://lingshiniu.com/search.html?keyword=腰果 " target="_blank "><span class="label label-success "><i class="fa fa-tag "></i> 腰果</span></a>
+							<a href="https://lingshiniu.com/search.html?keyword=休闲坚果 " target="_blank "><span class="label label-info "><i class="fa fa-tag "></i> 休闲坚果</span></a>
+							<div class="clearfix "></div>
 						</div>
-						<a href="https://lingshiniu.com/item/14.html" target="_blank">
-							<div class="buy">查看更多</div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="main-good-box" id="rou-gan-rou-fu" style="display: none;">
-
-			<div class="row item">
-				<div class="item-box  item-box-left ">
-					<div class="thumb">
-						<a href="#"><img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160327/56f74d0e0f07f.jpg?imageMogr2/thumbnail/300x300!" /></a>
-					</div>
-					<div class="info">
-						<a href="xiangqingye.html" target="_blank">
-							<div class="title">【七夕大促】零食妞新疆枣夹核桃500g 红枣核桃仁 枣想核你在一起（标准一斤装）</div>
-						</a>
-						<a href="xiangqingye.html" target="_blank">
-							<div class="price">￥40.00</div>
-						</a>
-						<div class="tags">
-							<a href="https://lingshiniu.com/search.html?keyword=美脑枣" target="_blank"><span class="label label-success"><i class="fa fa-tag"></i> 美脑枣</span></a>
-							<a href="https://lingshiniu.com/search.html?keyword=红枣核桃仁" target="_blank"><span class="label label-info"><i class="fa fa-tag"></i> 红枣核桃仁</span></a>
-							<a href="https://lingshiniu.com/search.html?keyword=枣夹核桃" target="_blank"><span class="label label-danger"><i class="fa fa-tag"></i> 枣夹核桃</span></a>
-							<a href="https://lingshiniu.com/search.html?keyword=新疆和田大枣" target="_blank"><span class="label label-warning"><i class="fa fa-tag"></i> 新疆和田大枣</span></a>
-							<a href="https://lingshiniu.com/search.html?keyword=新疆核桃" target="_blank"><span class="label label-primary"><i class="fa fa-tag"></i> 新疆核桃</span></a>
-							<div class="clearfix"></div>
-						</div>
-						<a href="xiangqingye.html" target="_blank">
-							<div class="buy">查看更多</div>
-						</a>
-					</div>
-				</div>
-				<div class="item-box  item-box-right ">
-					<div class="thumb">
-						<a href="#"><img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160301/56d46b0323d00.jpg?imageMogr2/thumbnail/300x300!" /></a>
-
-					</div>
-					<div class="info">
-						<a href="https://lingshiniu.com/item/14.html" target="_blank">
-							<div class="title">清之坊炭烧腰果188g坚果炒货零食休闲坚果酥脆可口腰果</div>
-						</a>
-						<a href="https://lingshiniu.com/item/14.html" target="_blank">
-							<div class="price">￥16.80</div>
-						</a>
-						<div class="tags">
-							<a href="https://lingshiniu.com/search.html?keyword=腰果" target="_blank"><span class="label label-success"><i class="fa fa-tag"></i> 腰果</span></a>
-							<a href="https://lingshiniu.com/search.html?keyword=休闲坚果" target="_blank"><span class="label label-info"><i class="fa fa-tag"></i> 休闲坚果</span></a>
-							<div class="clearfix"></div>
-						</div>
-						<a href="https://lingshiniu.com/item/14.html" target="_blank">
-							<div class="buy">查看更多</div>
+						<a href="https://lingshiniu.com/item/14.html " target="_blank ">
+							<div class="buy ">查看更多</div>
 						</a>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="footbox">
-			<div class="foot">
+		<div class="main-good-box " id="rou-gan-rou-fu " style="display: none; ">
+
+			<div class="row item ">
+				<div class="item-box item-box-left ">
+					<div class="thumb ">
+						<a href="# "><img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160327/56f74d0e0f07f.jpg?imageMogr2/thumbnail/300x300! " /></a>
+					</div>
+					<div class="info ">
+						<a href="xiangqingye.html " target="_blank ">
+							<div class="title ">【七夕大促】零食妞新疆枣夹核桃500g 红枣核桃仁 枣想核你在一起（标准一斤装）</div>
+						</a>
+						<a href="xiangqingye.html " target="_blank ">
+							<div class="price ">￥40.00</div>
+						</a>
+						<div class="tags ">
+							<a href="https://lingshiniu.com/search.html?keyword=美脑枣 " target="_blank "><span class="label label-success "><i class="fa fa-tag "></i> 美脑枣</span></a>
+							<a href="https://lingshiniu.com/search.html?keyword=红枣核桃仁 " target="_blank "><span class="label label-info "><i class="fa fa-tag "></i> 红枣核桃仁</span></a>
+							<a href="https://lingshiniu.com/search.html?keyword=枣夹核桃 " target="_blank "><span class="label label-danger "><i class="fa fa-tag "></i> 枣夹核桃</span></a>
+							<a href="https://lingshiniu.com/search.html?keyword=新疆和田大枣 " target="_blank "><span class="label label-warning "><i class="fa fa-tag "></i> 新疆和田大枣</span></a>
+							<a href="https://lingshiniu.com/search.html?keyword=新疆核桃 " target="_blank "><span class="label label-primary "><i class="fa fa-tag "></i> 新疆核桃</span></a>
+							<div class="clearfix "></div>
+						</div>
+						<a href="xiangqingye.html " target="_blank ">
+							<div class="buy ">查看更多</div>
+						</a>
+					</div>
+				</div>
+				<div class="item-box item-box-right ">
+					<div class="thumb ">
+						<a href="# "><img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160301/56d46b0323d00.jpg?imageMogr2/thumbnail/300x300! " /></a>
+
+					</div>
+					<div class="info ">
+						<a href="https://lingshiniu.com/item/14.html " target="_blank ">
+							<div class="title ">清之坊炭烧腰果188g坚果炒货零食休闲坚果酥脆可口腰果</div>
+						</a>
+						<a href="https://lingshiniu.com/item/14.html " target="_blank ">
+							<div class="price ">￥16.80</div>
+						</a>
+						<div class="tags ">
+							<a href="https://lingshiniu.com/search.html?keyword=腰果 " target="_blank "><span class="label label-success "><i class="fa fa-tag "></i> 腰果</span></a>
+							<a href="https://lingshiniu.com/search.html?keyword=休闲坚果 " target="_blank "><span class="label label-info "><i class="fa fa-tag "></i> 休闲坚果</span></a>
+							<div class="clearfix "></div>
+						</div>
+						<a href="https://lingshiniu.com/item/14.html " target="_blank ">
+							<div class="buy ">查看更多</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footbox ">
+			<div class="foot ">
 				<p>皖ICP备14015385-2号&copy;2015-2016 零食妞</p>
 				<ul>
 					<li>
-						<a href="">关于零食妞</a>
+						<a href=" ">关于零食妞</a>
 					</li>
 					<li>
-						<a href="">加入我们</a>
+						<a href=" ">加入我们</a>
 					</li>
 					<li>
-						<a href="">联系我们</a>
+						<a href=" ">联系我们</a>
 					</li>
 					<li>
-						<a href="">免责声明</a>
+						<a href=" ">免责声明</a>
 					</li>
 					<li>
-						<a href="">建议反馈</a>
+						<a href=" ">建议反馈</a>
 					</li>
 					<li>
-						<a href="">活动专题</a>
+						<a href=" ">活动专题</a>
 					</li>
 				</ul>
 			</div>
 		</div>
-		<script type="text/javascript">
+		<script type="text/javascript ">
 			$(function() {
 				$('li.pos').click(function() {
-					$(".nav-index-main-bar li").each(function() {
-						$(this).removeClass("active");
+					$(".nav-index-main-bar li ").each(function() {
+						$(this).removeClass("active ");
 					});
 					var is_load = $(this).attr('is-load');
 					if(is_load == 0) {
-						$(this).addClass("active");
+						$(this).addClass("active ");
 					}
 				})
 			});
 
-			$("#niu1").click(function() {
+			$("#niu1 ").click(function() {
 
-				$(".main-good-box").css({
-					"display": "none"
+				$(".main-good-box ").css({
+					"display ": "none "
 				});
-				$("#niu-tui-jian").css({
-					"display": "block"
+				$("#niu-tui-jian ").css({
+					"display ": "block "
 				});
 			});
-			$("#niu2").click(function() {
+			$("#niu2 ").click(function() {
 
-				$(".main-good-box").css({
-					"display": "none"
+				$(".main-good-box ").css({
+					"display ": "none "
 				});
-				$("#xiu-xian-ling-shi").css({
-					"display": "block"
+				$("#xiu-xian-ling-shi ").css({
+					"display ": "block "
 				});
 			});
-			$("#niu3").click(function() {
+			$("#niu3 ").click(function() {
 
-				$(".main-good-box").css({
-					"display": "none"
+				$(".main-good-box ").css({
+					"display ": "none "
 				});
-				$("#jian-guo-chao-shi").css({
-					"display": "block"
+				$("#jian-guo-chao-shi ").css({
+					"display ": "block "
 				});
 			});
-			$("#niu4").click(function() {
+			$("#niu4 ").click(function() {
 
-				$(".main-good-box").css({
-					"display": "none"
+				$(".main-good-box ").css({
+					"display ": "none "
 				});
-				$("#rou-gan-rou-fu").css({
-					"display": "block"
+				$("#rou-gan-rou-fu ").css({
+					"display ": "block "
 				});
 			});
-			$("#txt1").focus(function() {
+			$("#txt1 ").focus(function() {
 				$(this).animate({
 					width: 650
 				});
-				$(".firstul").css({
-					"display": "none"
+				$(".firstul ").css({
+					"display ": "none "
 				});
 			}).blur(function() {
 				$(this).animate({
 					width: 180
 				});
-				$(".firstul").css({
-					"display": "block"
+				$(".firstul ").css({
+					"display ": "block "
 				});
 			});
-			$("#btn1").click(function() {
-				alert("meixie");
+			$("#btn1 ").click(function() {
+				alert("meixie ");
 			});
-			$(".form2").mouseover(function() {
+			$(".form2 ").mouseover(function() {
 				$(this).css({
-					"background": "red"
+					"background ": "red "
 				})
 			}).mouseout(function() {
 				$(this).css({
-					"background": "none"
+					"background ": "none "
 				})
 			});
-			$(".form2").mousemove(function() {
+			$(".form2 ").mousemove(function() {
 				$(this).css({
-					"cursor": "pointer"
+					"cursor ": "pointer "
 				})
 			})
 		</script>

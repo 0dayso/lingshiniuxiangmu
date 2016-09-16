@@ -30,20 +30,20 @@
 			商品名称
 		</th>
 		<th>
-			商品图片
+			商品价格
 		</th>
 		<th>
-			商品价格
+			商品图片
 		</th>
 	</tr>
 </table>
 <script>
-    var pageSizeV =10;
+    var pageSizeV =20;
     var pageIndexV=1;
     //ajax 获取数据 load
     $(function(){
         $.ajax({
-            url:"../../product/GetProductsByPage_get",
+            url:"http://localhost:8080/product/GetProductsByPage_get",
             data:{
                 "pagesize":pageSizeV,
                 "pageindex":pageIndexV
@@ -53,7 +53,7 @@
                 for(var i=0;i<data.length;i++){
                     //把data 里面的string 主动转成对象；
                     var dataObj=JSON.parse(data[i].Data);
-                    var trOb=$("<tr><td>"+dataObj.name+"</td><td>"+dataObj.price+"</td><td><img src=\""+dataObj.imgsrc+"\"/></td><td><a href='07-manageredit.html?id="+dataObj.id+"'>编辑</a></td><td><a href='08-deleteedit.html?id="+dataObj.id+"'>删除</a></td></tr>");
+                    var trOb=$("<tr><td>"+dataObj.id+"</td><td>"+dataObj.name+"</td><td>"+dataObj.price+"</td><td><img src=\""+dataObj.imgsrc+"\"/></td><td><a href='07-manageredit.html?id="+dataObj.id+"'>编辑</a></td><td><a href='08-deleteedit.html?id="+dataObj.id+"'>删除</a></td></tr>");
                     $("#tb1").append(trOb);
                 }
             },

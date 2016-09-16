@@ -1,0 +1,48 @@
+.liebiao ul li{
+	width: 225px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	height: 320px;
+	background-color: white;
+	float: left;
+	position: relative;
+}
+.liebiao ul li:hover{
+	box-shadow: 0 0 10px 2px rgba(0,204,204,0.5);
+}
+.liebiao ul li img{
+	width: 195px;
+	height: 195px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.liebiao ul li span{
+	display: block;
+	color: red;
+	font-size: 16px;
+	font-weight: bold;
+}
+.guanzhu{
+	width: 64px;
+	height: 24px;
+	border: 1px solid #EEEEEE;
+	position: absolute;
+	top: 270px;
+	left: 10px;
+	line-height: 24px;
+}
+
+.jiarugouwuche{
+	width: 90px;
+	height: 22px;
+	border: 1px solid #EEEEEE;
+	position: absolute;
+	top: 270px;
+	left: 110px;
+	color: red;
+	font-size: 12px;
+	line-height: 22px;
+}
+.guanzhu:hover i{
+	color: red;
+}

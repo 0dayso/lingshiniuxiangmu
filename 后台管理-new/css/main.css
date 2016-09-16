@@ -36,30 +36,10 @@
 	width: 432px;
 	height: 57px;
 	float: left;
-	margin: 30px 0 0 30px;
+	margin: 30px 0 0 300px;
 	text-shadow: 0 0 25px #FFFFFF;
 }
-.head ul{
-	margin-top: 34px;
-	float: right;
-}
-.head ul li{
-	float: left;
-}
-.head ul img{
-	padding-left: 30px;
-}
-.head ul span{
-	padding-left: 20px;
-}
-.head ul a{
-	width: 95px;
-	height: 56px;
-	display: block;
-}
-.head ul a:hover{
-	background: url(../img/libj.png) no-repeat;
-}
+
 
 .login{
 	width: 264px;
@@ -84,12 +64,6 @@
 }
 
 
-/*.center{
-	_width: 1280px;
-	min-width: 1280px;
-	width: 100%;
-	height: 820px;
-}*/
 .nav{
 	width: 200px;
 	height: 90%;

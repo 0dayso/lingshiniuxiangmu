@@ -8,9 +8,9 @@
 <body style="background: paleturquoise;">
 <div>
    id <input type="text" id="txtid"/><br/><br/>
-   name <input type="text" id="txtname"/><br/><br/>
+   name <input type="text" id="txtname" width="300px"/><br/><br/>
    price <input type="text" id="txtprice"/><br/><br/>
-   imgsrx <input type="text" id="txtimgsrc"/><br/><br/>
+   imgsrx <input type="text" id="txtimgsrc" width="300px"/><br/><br/>
     <input type="button" id="bt1" value="提交"/><br/>
     <script>
         $("#bt1").click(function(){
@@ -27,7 +27,7 @@
             }
             var dataJsonStr=JSON.stringify(dataJsonOb);
             $.ajax({
-                url:"../../product/CreateUpdateProduct_post",
+                url:"http://localhost:8080/product/CreateUpdateProduct_post",
                 data:{
                     "id":pId,
                     "datajson":dataJsonStr

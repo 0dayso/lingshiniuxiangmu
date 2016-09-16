@@ -27,8 +27,8 @@
 
 		<link rel="stylesheet" type="text/css" href="css/css.css" />
 		<script src="js/js.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/Calculation.js" type="text/javascript" charset="utf-8"></script>
-		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/cookieUtil.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/gouwuche.css"/>
 	</head>
 
 	<body style="background-color: #fff7e4;padding-top: 0;">
@@ -277,209 +277,68 @@
 			});
 		</script>
 		
-		
-		<script type="text/javascript">
-			
-		$(document).ready(function () {
-
-	$(".allselect").click(function () {
-		$(".gwc_tb2 input[name=newslist]").each(function () {
-			$(this).attr("checked", true);
-			// $(this).next().css({ "background-color": "#3366cc", "color": "#ffffff" });
-		});
-		GetCount();
-	});
-
-	$("#invert").click(function () {
-		$(".gwc_tb2 input[name=newslist]").each(function () {
-			if ($(this).attr("checked")) {
-				$(this).attr("checked", false);
-				//$(this).next().css({ "background-color": "#ffffff", "color": "#000000" });
-			} else {
-				$(this).attr("checked", true);
-				//$(this).next().css({ "background-color": "#3366cc", "color": "#000000" });
-			} 
-		});
-		GetCount();
-	});
-
-	$("#cancel").click(function () {
-		$(".gwc_tb2 input[name=newslist]").each(function () {
-			$(this).attr("checked", false);
-			// $(this).next().css({ "background-color": "#ffffff", "color": "#000000" });
-		});
-		GetCount();
-	});
-
-	$(".gwc_tb2 input[name=newslist]").click(function () {
-		if ($(this).attr("checked")) {
-			//$(this).next().css({ "background-color": "#3366cc", "color": "#ffffff" });
-		} else {
-			// $(this).next().css({ "background-color": "#ffffff", "color": "#000000" });
-		}
-	});
-
-	
-	$(".gwc_tb2 input[name=newslist]").click(function () {
-		// $("#total2").html() = GetCount($(this));
-		GetCount();
-		//alert(conts);
-	});
-});
-function GetCount() {
-	var conts = 0;
-	var aa = 0;
-	$(".gwc_tb2 input[name=newslist]").each(function () {
-		if ($(this).attr("checked")) {
-			for (var i = 0; i < $(this).length; i++) {
-				conts += parseInt($(this).val());
-				aa += 1;
-			}
-		}
-	});
-	$("#shuliang").text(aa);
-	$("#zong1").html((conts).toFixed(2));
-	$("#jz1").css("display", "none");
-	$("#jz2").css("display", "block");
-}
-</script>
-		
-		
-		
-		<div class="kongbai" style="min-height: 400px;">
-			
-			
-			<div class="gwc" style=" margin:auto;">
-	<table cellpadding="0" cellspacing="0" class="gwc_tb1">
-		<tr>
-			<td class="tb1_td1"><input id="Checkbox1" type="checkbox"  class="allselect"/></td>
-			<td class="tb1_td1">全选</td>
-			<td class="tb1_td3">商品</td>
-			<td class="tb1_td4">商品信息</td>
-			<td class="tb1_td5">数量</td>
-			<td class="tb1_td6">单价</td>
-			<td class="tb1_td7">操作</td>
-		</tr>
-	</table>
-		   
-	<!---商品加减算总数---->
-	<script type="text/javascript">
-	$(function () {
-		var t = $("#text_box1");
-		$("#add1").click(function () {
-			t.val(parseInt(t.val()) + 1)
-			setTotal(); GetCount();
-		})
-		$("#min1").click(function () {
-			t.val(parseInt(t.val()) - 1)
-			setTotal(); GetCount();
-		})
-		function setTotal() {
-
-			$("#total1").html((parseInt(t.val()) * 9).toFixed(2));
-			$("#newslist-1").val(parseInt(t.val()) * 9);
-		}
-		setTotal();
-	})
-	</script>
-	
-	<table cellpadding="0" cellspacing="0" class="gwc_tb2">
-		<tr>
-			<td class="tb2_td1"><input type="checkbox" value="1" name="newslist" id="newslist-1" /></td>
-			<td class="tb2_td2"><a href="#"><img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160327/56f74d0e0f07f.jpg?imageMogr2/thumbnail/300x300!"/></a></td>
-			<td class="tb2_td3"><a href="#">产品标题</a></td>
-			<td class="tb1_td4">一件</td>
-			<td class="tb1_td5">
-				<input id="min1" name=""  style=" width:20px; height:18px;border:1px solid #ccc;" type="button" value="-" />
-				<input id="text_box1" name="" type="text" value="1" style=" width:30px; text-align:center; border:1px solid #ccc;" />
-				<input id="add1" name="" style=" width:20px; height:18px;border:1px solid #ccc;" type="button" value="+" />
-			</td>
-			<td class="tb1_td6"><label id="total1" class="tot" style="color:#ff5500;font-size:14px; font-weight:bold;"></label></td>
-			<td class="tb1_td7"><a href="#">删除</a></td>
-		</tr>
-	</table>
-	
-	<!---商品加减算总数---->
-	<script type="text/javascript">
-	$(function () {
-		var t = $("#text_box2");
-		$("#add2").click(function () {
-			t.val(parseInt(t.val()) + 1)
-			setTotal(); GetCount();
-		})
-		$("#min2").click(function () {
-			t.val(parseInt(t.val()) - 1)
-			setTotal(); GetCount();
-		})
-		function setTotal() {
-
-			$("#total2").html((parseInt(t.val()) * 8).toFixed(2));
-			$("#newslist-2").val(parseInt(t.val()) * 8);
-		}
-		setTotal();
-	})
-	</script>
-	<table cellpadding="0" cellspacing="0" class="gwc_tb2">
-		<tr>
-			<td class="tb2_td1"><input type="checkbox" value="1" name="newslist" id="newslist-2" /></td>
-			<td class="tb2_td2"><a href="#"><img src="https://o1i04ppqq.qnssl.com/Uploads/goodsImg/20160327/56f74d0e0f07f.jpg?imageMogr2/thumbnail/300x300!"/></a></td>
-			<td class="tb2_td3"><a href="#">产品标题</a></td>
-			<td class="tb1_td4">一件</td>
-			<td class="tb1_td5">
-				<input id="min2" name=""  style=" width:20px; height:18px;border:1px solid #ccc;" type="button" value="-" />
-				<input id="text_box2" name="" type="text" value="1" style=" width:30px; text-align:center; border:1px solid #ccc;" />
-				<input id="add2" name="" style=" width:20px; height:18px;border:1px solid #ccc;" type="button" value="+" />
-			</td>
-			<td class="tb1_td6"><label id="total2" class="tot" style="color:#ff5500;font-size:14px; font-weight:bold;"></label></td>
-			<td class="tb1_td7"><a href="#">删除</a></td>
-		</tr>
-	</table>
-	
-	<!---总数---->
-	<script type="text/javascript">
-	$(function () {
-		$(".quanxun").click(function () {
-			setTotal();
-			//alert($(lens[0]).text());
-		});
-		function setTotal() {
-			var len = $(".tot");
-			var num = 0;
-			for (var i = 0; i < len.length; i++) {
-				num = parseInt(num) + parseInt($(len[i]).text());
-
-			}
-			//alert(len.length);
-			$("#zong1").text(parseInt(num).toFixed(2));
-			$("#shuliang").text(len.length);
-		}
-		//setTotal();
-	})
-	</script>
-	<table cellpadding="0" cellspacing="0" class="gwc_tb3">
-		<tr>
-			<td class="tb1_td1"><input id="checkAll" class="allselect" type="checkbox" /></td>
-			<td class="tb1_td1">全选</td>
-			<td class="tb3_td1">
-				<input id="invert" type="checkbox" />反选
-				<input id="cancel" type="checkbox" />取消
-			</td>
-			<td class="tb3_td2">已选商品 <label id="shuliang" style="color:#ff5500;font-size:14px; font-weight:bold;">0</label> 件</td>
-			<td class="tb3_td3">合计(不含运费):<span>￥</span><span style=" color:#ff5500;"><label id="zong1" style="color:#ff5500;font-size:14px; font-weight:bold;"></label></span></td>
-			<td class="tb3_td4"><span id="jz1">结算</span><a href="#" style=" display:none;"  class="jz2" id="jz2">结算</a></td>
-		</tr>
-	</table>
-
-</div>
-			
-			
-			
-			
-			
-			
+		<div class="clear"></div>
+	<div class="shopcart">
+		<h1>全部商品</h1>
+		<div class="list-head">
+			<div class="h1" style="font-size: 18px; ">商品名称</div>
+			<div class="h2" style="font-size: 18px;">单价</div>
+			<div class="h2" style="font-size: 18px;">数量</div>
+			<div class="h3" style="font-size: 18px;">操作</div>
 		</div>
+		<div id="cart-list">
+
+		</div>
+	<a href="javascript:;">	<div class="gotojiezhang">
+			去结算
+	</div></a>
+	</div>
+	<script type="text/javascript">
+		var oCartList=document.getElementById("cart-list");
+		var strCookie=cookieUtil.getCookie("cookiect");
+		if(strCookie){
+			var arrCookie=strCookie.split("||");
+			var html="";
+			for(var i=0;i<arrCookie.length;i++){
+				var arrInfo=arrCookie[i].split("&&");
+				html+="<div class=\"pl\" id=\"p_"+i+"\">";
+				html+="<div class=\"c1\">";
+				html+="<span><img src=\""+arrInfo[2]+"\"></span>";
+				html+="<p>"+arrInfo[0]+"</p></div>";
+				html+="<div class=\"c2\">"+arrInfo[1]+"</div>";
+				html+="<div class=\"c2\"><input type='button' id='jianjian' value='-' /><em>"+arrInfo[3]+"</em><input type='button' id='jiajia' value='+' /></div><div class=\"c3\">";
+				html+="<a href=\"javascript:delProduct('p_"+i+"','"+arrInfo[0]+"');\">删除</a>	</div></div>";
+			}
+			oCartList.innerHTML+=html;
+		}
+		$("#cart-list").on("click","#jianjian",function(){
+			var ssss = $(this).parent().children().eq(1).text();
+			ssss--;
+			$(this).parent().children().eq(1).text(ssss);
+		});
+		$("#cart-list").on("click","#jiajia",function(){
+			var ssss = $(this).parent().children().eq(1).text();
+			ssss++;
+			$(this).parent().children().eq(1).text(ssss);
+		})
 		
-	
+		function delProduct(divid,productname){
+			var oPro=document.getElementById(divid);
+			oCartList.removeChild(oPro);
+			//cookie
+			var strCookie=cookieUtil.getCookie("cookiect");
+			var arrCookie=strCookie.split("||");
+			for(var i=0;i<arrCookie.length;i++){
+				var arrInfo=arrCookie[i].split("&&");
+				if(arrInfo[0]==productname){
+					arrCookie.splice(i,1);
+					break;
+				}
+			}
+			var strCookieNew=arrCookie.join("||");
+			cookieUtil.setCookie("cookiect",strCookieNew,30);
+		}
+	</script>
 		<div class="footbox">
 			<div class="foot">
 				<p>皖ICP备14015385-2号&copy;2015-2016 零食妞</p>

@@ -179,6 +179,13 @@ img:hover{
 	width: 100%;
 	height: 100%;
 }
+
+
+
+
+
+
+
 .main-goods-box .pre-loading,.main-goods-box .nogoods{background:#fff;text-align:center;padding:15px 0;}
 .main-goods-box .nogoods{font-size:25px;}
 .item-box{width:595px;height:195px;margin-bottom:15px;background:#fff;box-shadow:2px 2px 5px rgba(0,0,0,0.1)}
@@ -194,30 +201,6 @@ img:hover{
 .item .info .tags{margin-top:10px;height:50px;overflow:hidden}
 .item .info .tags a{display:block;float:left;margin-right:5px;margin-bottom:5px;}
 .item .info .buy{width:60%;margin-top:10px;background:#ff981a;color:#fff;text-align:center;line-height:30px;border-radius:4px;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .footbox{
 	width: 100%;
