@@ -292,8 +292,12 @@
 	<a href="javascript:;">	<div class="gotojiezhang">
 			去结算
 	</div></a>
+	<div id="zongjiaqian">
+	</div>
 	</div>
 	<script type="text/javascript">
+		var summoney=0;
+		var omoney = document.getElementById("zongjiaqian");
 		var oCartList=document.getElementById("cart-list");
 		var strCookie=cookieUtil.getCookie("cookiect");
 		if(strCookie){
@@ -308,19 +312,28 @@
 				html+="<div class=\"c2\">"+arrInfo[1]+"</div>";
 				html+="<div class=\"c2\"><input type='button' id='jianjian' value='-' /><em>"+arrInfo[3]+"</em><input type='button' id='jiajia' value='+' /></div><div class=\"c3\">";
 				html+="<a href=\"javascript:delProduct('p_"+i+"','"+arrInfo[0]+"');\">删除</a>	</div></div>";
+				summoney += (parseFloat(arrInfo[1]))*arrInfo[3];
 			}
+			/*alert(summoney);*/
 			oCartList.innerHTML+=html;
-		}
+		omoney.innerHTML=("总价钱:"+summoney.toFixed(2)+"");
 		$("#cart-list").on("click","#jianjian",function(){
 			var ssss = $(this).parent().children().eq(1).text();
 			ssss--;
 			$(this).parent().children().eq(1).text(ssss);
+			var mon = parseFloat( $(this).parent().parent().children().eq(1).text());
+			summoney -= mon;
+			omoney.innerHTML=("总价钱:"+summoney.toFixed(2)+"");
 		});
 		$("#cart-list").on("click","#jiajia",function(){
 			var ssss = $(this).parent().children().eq(1).text();
 			ssss++;
 			$(this).parent().children().eq(1).text(ssss);
+			var mon = parseFloat($(this).parent().parent().children().eq(1).text());
+			summoney += mon;
+			omoney.innerHTML=("总价钱:"+summoney.toFixed(2)+"");
 		})
+		}
 		
 		function delProduct(divid,productname){
 			var oPro=document.getElementById(divid);

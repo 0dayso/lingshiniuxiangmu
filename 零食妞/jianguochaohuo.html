@@ -304,7 +304,7 @@
                 for(var i=0;i<data.length;i++){
                     //把data 里面的string 主动转成对象；
                     var dataObj=JSON.parse(data[i].Data);
-                  var trOb=$("<li><img src=\""+dataObj.imgsrc+"\"/><span>￥ "+dataObj.price+"</span><i>"+dataObj.name+"</i><div class=\"guanzhu\"><i class=\"iconfont icon-ego-heart\"></i>&nbsp;&nbsp;关注</div><div class=\"jiarugouwuche\"><i class=\"iconfont icon-gouwuche\"></i>加入购物车</div></li>");
+                  var trOb=$("<li><img src=\""+dataObj.imgsrc+"\"/><span>"+dataObj.price+"</span><i>"+dataObj.name+"</i><div class=\"guanzhu\"><i class=\"iconfont icon-ego-heart\"></i>&nbsp;&nbsp;关注</div><div class=\"jiarugouwuche\"><i class=\"iconfont icon-gouwuche\"></i>加入购物车</div></li>");
                     $("#liebiaoul").append(trOb);
                 }
             },
@@ -392,6 +392,17 @@
 				
 			</a>
 		</div>
+		
+		
+		<div class="qqq" style="width: 50px; height: 50px;background-color: blue;position: fixed; top: 60%;right: 50px;border-radius: 5px
+			;color: white;text-align: center;">
+			<i class="iconfont icon-weibiaoti1" style="font-size: 36px;"></i>
+		</div>
+		<div class="www" style="width: 50px;height: 50px;background-color: green;position: fixed;top: 68%;right: 50px;border-radius: 5px;color: white;text-align: center;">
+			<i class="iconfont icon-wode" style="font-size: 36px;"></i>
+		</div>
+		
+		
 		<script type="text/javascript">
 			$(".gouwuchetubiao").mousemove(function(){
 				$("#jiesuan").css({"display":"block"})

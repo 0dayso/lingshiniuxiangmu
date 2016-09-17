@@ -5,8 +5,13 @@
     <title>后台管理列表</title>
     <script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
     <style type="text/css">
-    	#div1 td{
+    	#div1  td{
     		border: 1px solid #CCCCCC;
+    		width: 200px;
+    		height: 50px;
+    		text-align: center;
+    	}
+    	td{
     	}
     </style>
 </head>
@@ -19,31 +24,6 @@
  	</tr>
 </table>
 <script>
-   var oDiv1 = document.getElementById("div1");
-		/* var xhr;
-        if (window.XMLHttpRequest) {
-        xhr = new XMLHttpRequest();
-        } else {
-        xhr = new ActiveXObject("Microsoft.XMLHTTP");
-        }
-
-        xhr.onreadystatechange = function () {
-        if (xhr.readyState == 4) {
-        if (xhr.status == 200) {
-        var arrUser = eval("(" + xhr.responseText + ")");
-        for(var i =0;i<arrUser.length;i++){
-        oDiv1.innerHTML+=("<tr><td>"+arrUser[i].Name+"</td><td>"+arrUser[i].password+"</td></tr>")
-        }
-        } else {
-        alert("失败");
-        }
-        }
-        }
-		
-      	xhr.open("get", "http://localhost:8080/user/getAllUsers", true);
-        xhr.send();*/
-        
-        
          $(function(){
         $.ajax({
             url:"http://localhost:8080/user/getAllUsers",
@@ -52,7 +32,6 @@
             success:function(data){
                 //data  array
                 for(var i=0;i<data.length;i++){
-                    //把data 里面的string 主动转成对象；
                     var trOb=$("<tr><td>"+data[i].Name+"</td><td>"+data[i].password+"</td></tr>");
                     $("#div1").append(trOb);
                 }
